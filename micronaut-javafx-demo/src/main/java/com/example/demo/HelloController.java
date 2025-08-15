@@ -10,7 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @Singleton
-class HelloController {
+public class HelloController {
 
   private static final Logger log = LoggerFactory.getLogger(HelloController.class);
 
