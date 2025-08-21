@@ -4,11 +4,10 @@ plugins {
     id("org.openjfx.javafxplugin")
     id("micronaut-javafx.java-conventions")
     id("io.micronaut.minimal.library")
-    //id("io.micronaut.application")
 }
 
-group = "org.home.micronaut"
-version = "4.9.2-SNAPSHOT"
+group = (project.findProperty("projectGroup") as String?)!!
+version = project.findProperty("micronautVersion") as String? + "-SNAPSHOT"
 
 dependencies {
     implementation(project(":demo-services"))
