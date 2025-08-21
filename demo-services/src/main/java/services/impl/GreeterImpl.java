@@ -10,15 +10,18 @@ import org.slf4j.LoggerFactory;
 @Singleton
 final class GreeterImpl implements Greeter {
 
+  private static final String MESSAGE = "Welcome to JavaFX application. ";
+
   private static final Logger log = LoggerFactory.getLogger(GreeterImpl.class);
 
   public String greet() {
-    return "Добро пожаловать в JavaFX приложение! " + LocalDateTime.now();
+    return MESSAGE + LocalDateTime.now();
   }
 
   public CompletableFuture<String> greetAsync() {
     return CompletableFuture.supplyAsync(() -> {
       log.debug("greetAsync()");
-      return "Добро пожаловать в JavaFX приложение! " + LocalDateTime.now();});
+      return MESSAGE + LocalDateTime.now();
+    });
   }
 }
