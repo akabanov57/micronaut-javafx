@@ -3,7 +3,7 @@ package com.example.demo;
 import java.util.NoSuchElementException;
 import micronaut.javafx.launcher.api.JFXLauncher;
 
-public class DemoLauncher {
+public final class DemoLauncher {
 
   public static void main(String[] args) {
     JFXLauncher

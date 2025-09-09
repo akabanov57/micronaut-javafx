@@ -5,7 +5,10 @@ import javafx.application.Application;
 import micronaut.javafx.launcher.api.ApplicationDelegate;
 import micronaut.javafx.launcher.api.JFXLauncher;
 
-public class MicronautJFXLauncher implements JFXLauncher {
+/**
+ * Service provider.
+ */
+public final class MicronautJFXLauncher implements JFXLauncher {
 
   @Override
   public void launch(String[] args) {

@@ -10,7 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @Singleton
-public class HelloController {
+final class HelloController {
 
   private static final Logger log = LoggerFactory.getLogger(HelloController.class);
 
@@ -25,7 +25,7 @@ public class HelloController {
   private Label welcomeText;
 
   @FXML
-  protected void onHelloButtonClick() throws ExecutionException, InterruptedException {
+  private void onHelloButtonClick() throws ExecutionException, InterruptedException {
 //    greeter.greetAsync().whenComplete((r, e) -> welcomeText.setText(r));
     welcomeText.setText(greeter.greetAsync().get());
     log.debug("welcomeText installed.");

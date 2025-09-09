@@ -5,9 +5,11 @@ import javafx.stage.Stage;
 import micronaut.javafx.launcher.api.ApplicationDelegate;
 
 /**
+ * A JavaFX application that delegates calls to the ApplicationDelegate.
+ * <p>
  * The visibility scope must be public.
  */
-public class ProxyApplication extends Application {
+public final class ProxyApplication extends Application {
 
   private static ApplicationDelegate delegate;
 

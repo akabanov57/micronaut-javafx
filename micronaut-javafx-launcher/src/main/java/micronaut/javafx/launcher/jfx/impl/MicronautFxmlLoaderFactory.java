@@ -26,7 +26,7 @@ import micronaut.javafx.launcher.api.FxmlLoaderFactory;
  * Factory for providing FXMLLoaders that do full DI.
  */
 @Singleton
-class MicronautFxmlLoaderFactory implements FxmlLoaderFactory {
+final class MicronautFxmlLoaderFactory implements FxmlLoaderFactory {
 
   private final BeanContext context;
 

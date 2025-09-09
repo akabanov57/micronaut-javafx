@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 
 @Context
 @Requires(beans = {FxmlLoaderFactory.class})
-class HelloApplication implements ApplicationDelegate {
+final class HelloApplication implements ApplicationDelegate {
 
   private static final Logger log = LoggerFactory.getLogger(HelloApplication.class);
 
