@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "org.home.micronaut"
-version = "4.9.2-SNAPSHOT"
+version = "4.10.6-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -16,8 +16,8 @@ dependencies {
 }
 
 java {
-    sourceCompatibility = JavaVersion.toVersion("21")
-    targetCompatibility = JavaVersion.toVersion("21")
+    sourceCompatibility = JavaVersion.toVersion("25")
+    targetCompatibility = JavaVersion.toVersion("25")
     modularity.inferModulePath = false
 }
 

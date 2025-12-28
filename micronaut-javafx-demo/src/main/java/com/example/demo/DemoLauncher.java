@@ -5,7 +5,7 @@ import micronaut.javafx.launcher.api.JFXLauncher;
 
 public final class DemoLauncher {
 
-  public static void main(String[] args) {
+  static void main(String[] args) {
     JFXLauncher
         .findLauncher()
         .orElseThrow(() -> new NoSuchElementException("JFXLauncher not found."))

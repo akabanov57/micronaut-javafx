@@ -2,6 +2,8 @@ package com.example.demo;
 
 import demo.services.Greeter;
 import io.micronaut.context.annotation.Prototype;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import jakarta.inject.Inject;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -40,7 +42,20 @@ final class HelloController {
   private void onHelloButtonClick() {
     greeter
         .greetAsync()
-        .whenComplete((r, e) -> Platform.runLater(() -> welcomeText.setText(r)));
+        .whenComplete((r, _) -> Platform.runLater(() -> welcomeText.setText(r)));
     log.debug("welcomeText installed.");
+  }
+
+  @PostConstruct
+  void postConstruct() {
+    log.info("postConstruct called.");
+  }
+
+  /**
+   * If the controller has "Prototype" scope, the preDestroy method is not called.
+   */
+  @PreDestroy
+  void preDestroy() {
+    log.info("preDestroy called.");
   }
 }
