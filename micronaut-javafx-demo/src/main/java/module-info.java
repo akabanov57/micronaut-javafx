@@ -1,7 +1,6 @@
 module micronaut.javafx.demo {
   requires demo.services;
   requires io.micronaut.micronaut_inject;
-  requires io.micronaut.micronaut_core;
   requires jakarta.inject;
   requires jakarta.annotation;
   requires javafx.controls;

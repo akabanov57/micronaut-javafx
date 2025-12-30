@@ -1,6 +1,5 @@
 module micronaut.javafx.launcher {
   requires io.micronaut.micronaut_inject;
-  requires io.micronaut.micronaut_core;
   requires jakarta.inject;
   requires javafx.fxml;
   requires javafx.graphics;

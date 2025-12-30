@@ -12,7 +12,7 @@ version = project.findProperty("micronautVersion") as String? + "-SNAPSHOT"
 dependencies {
     implementation(project(":demo-services"))
     implementation(project(":micronaut-javafx-launcher"))
-    runtimeOnly("io.micronaut:micronaut-aop:4.10.10")
+    runtimeOnly("io.micronaut:micronaut-aop")
     runtimeOnly("ch.qos.logback:logback-classic")
 }
 
