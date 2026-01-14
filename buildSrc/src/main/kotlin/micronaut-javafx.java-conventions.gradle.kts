@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "org.home.micronaut"
-version = "4.10.6-SNAPSHOT"
+version = "4.10.7-SNAPSHOT"
 
 repositories {
     mavenCentral()
